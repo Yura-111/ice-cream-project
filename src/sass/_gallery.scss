@@ -19,6 +19,7 @@
   gap: 2.5px;
 
   & .photo {
+    width: unset;
     border-radius: 8px;
     transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);
   }
@@ -42,8 +43,4 @@
 .fifth-img {
   position: relative;
   top: -8px;
-}
-
-img {
-  display: block;
 }
