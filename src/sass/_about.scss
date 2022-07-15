@@ -1,0 +1,67 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-image: url(../images/about-milk-1x.png);
+  background-position: center 595px;
+  background-repeat: no-repeat;
+}
+
+.about__top-text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.about__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.about__text {
+  width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #000000;
+}
+
+.about__bottom-text {
+  width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+}
+
+.about__btn {
+  width: 175px;
+  height: 45px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--title-text-color);
+  }
+}
