@@ -52,6 +52,9 @@ button {
     flex-wrap: wrap;
     gap: 16px;
   }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
 
 .products__item {
@@ -64,6 +67,7 @@ button {
     background-color: #ffb8ca;
     border-radius: 24px;
   }
+
   &:nth-child(2) {
     background-color: #f0d1a5;
     border-radius: 24px;
@@ -81,39 +85,121 @@ button {
     background: transparent;
     background-repeat: no-repeat;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      height: 224px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 395px;
+    }
   }
 
   &:nth-child(1)::before {
     position: absolute;
     top: -140px;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-image: url(../images/products-pic1.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      // background-image: url(../images/products-pic1-2x.png);
+    }
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-pic1-tab-1x.png);
+      top: -140px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        // background-image: url(../images/products-pic1-tab-2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products-pic1-desc-1x.png);
+      top: -260px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        // background-image: url(../images/products-pic1-desc-2x.png);
+      }
+    }
   }
+
   &:nth-child(2)::before {
     position: absolute;
     top: -140px;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-image: url(../images/products-pic2.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-pic2-tab-1x.png);
+      top: -140px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products-pic2-desc-1x.png);
+      top: -260px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
+
   &:nth-child(3)::before {
     position: absolute;
     top: -140px;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-image: url(../images/products-pic3.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-pic3-tab-1x.png);
+      top: -140px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/products-pic3-desc-1x.png);
+      top: -260px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 32px) / 3);
+    height: 470px;
+    padding: 120px 30px 40px 30px;
+    margin-top: 140px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 96px) / 3);
+    width: calc((100% - 64px) / 3);
+    height: 535px;
+    padding: 165px 60px 60px 60px;
+    margin-top: 260px;
   }
 }
 
@@ -139,14 +225,18 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 30px;
-    left: 127px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
   }
 }
 
 .products__item-text {
   width: 200px;
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -154,11 +244,23 @@ button {
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
   margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     width: 160px;
+    line-height: 1.76;
+    // margin: 30px auto;
+
+    .products-text-invisible {
+      display: none;
+    }
   }
+
   @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    margin: 30px auto;
     width: 240px;
+    margin-bottom: 60px;
   }
 }
 
