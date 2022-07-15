@@ -17,19 +17,11 @@ button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  min-width: 100%;
-  height: auto;
-  width: 100%;
-}
-
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.products-top-text {
+.products__top-text {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -40,7 +32,7 @@ img {
   color: var(--accent-color);
   margin-bottom: 15px;
 }
-.products-title {
+.products__title {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -53,11 +45,16 @@ img {
   margin-bottom: 8px;
 }
 
-.products-list {
+.products__list {
   list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
-.products-item {
+.products__item {
   height: 490px;
   padding: 160px 40px 40px 40px;
   position: relative;
@@ -110,9 +107,17 @@ img {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 96px) / 3);
+  }
 }
 
-.products-item-title {
+.products__item-title {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -133,13 +138,13 @@ img {
     background-image: url(../images/3-white-points.png);
     background-repeat: no-repeat;
     background-position: center;
-    // padding-left: 147px;
     margin-top: 30px;
     left: 127px;
   }
 }
 
-.products-item-text {
+.products__item-text {
+  width: 200px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -149,9 +154,15 @@ img {
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 240px;
+  }
 }
 
-.products-button-arrow {
+.products__button-arrow {
   display: block;
   margin: 0 auto;
   width: 40px;
@@ -160,10 +171,10 @@ img {
   border: none;
   border-radius: 50%;
   color: var(--title-text-color);
-}
 
-.products-button-arrow:hover,
-.products-button-arrow:focus {
-  background-color: #d41443;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    color: #ffffff;
+  }
 }
