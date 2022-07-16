@@ -1,9 +1,12 @@
-.gallery {
+.conteiner-gradient {
   background-image: linear-gradient(
     to bottom,
     var(--bg-rose-color) 15%,
     #ffffff 15%
   );
+}
+
+.gallery {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
