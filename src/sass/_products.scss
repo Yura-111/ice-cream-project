@@ -288,12 +288,11 @@ button {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 
   @media screen and (min-width: 768px) {
     width: 174px;
     line-height: 1.76;
-    margin: 0 auto 30px auto;
 
     .products-text-invisible {
       display: none;
@@ -303,7 +302,6 @@ button {
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.76;
-    margin: 0 auto 30px auto;
     width: 240px;
     margin-bottom: 60px;
   }
