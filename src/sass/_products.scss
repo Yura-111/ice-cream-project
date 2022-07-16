@@ -246,9 +246,9 @@ button {
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    width: 160px;
+    width: 174px;
     line-height: 1.76;
-    // margin: 30px auto;
+    margin: 0 auto 30px auto;
 
     .products-text-invisible {
       display: none;
@@ -258,7 +258,7 @@ button {
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.76;
-    margin: 30px auto;
+    margin: 0 auto 30px auto;
     width: 240px;
     margin-bottom: 60px;
   }
