@@ -159,7 +159,7 @@
     flex-wrap: nowrap;
   }
   &__location {
-    width: 161.45px;
+    width: 162px;
     height: 44px;
     left: 78px;
     top: 6204px;
@@ -169,8 +169,12 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-text-color);
+    text-decoration: none;
   }
   &__location:hover,
   &__location:focus {
