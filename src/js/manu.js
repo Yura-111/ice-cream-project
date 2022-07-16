@@ -42,3 +42,18 @@
                 refs.manu.classList.toggle("is-hidden");
             }
             })();
+
+    (() => {
+        const refs = {
+            openManuBtn: document.querySelector("[data-manu-description-open]"),
+            closeManuBtn: document.querySelector("[data-manu-description-close]"),
+            manu: document.querySelector("[data-manu-description]"),
+        };
+
+        refs.openManuBtn.addEventListener("click", toggleManu);
+        refs.closeManuBtn.addEventListener("click", toggleManu);
+    
+        function toggleManu() {
+            refs.manu.classList.toggle("is-hidden");
+        }
+        })();
