@@ -177,9 +177,6 @@ body {
   mask-repeat: no-repeat;
 }
 
-.mobile-menu {
-  display: relative;
-}
 .mobile-menu__container {
   display: block;
   position: absolute;
