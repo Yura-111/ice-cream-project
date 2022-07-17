@@ -1,34 +1,58 @@
 <header class="header">
   <div class="container">
-    <a class="header_logo link" href="" lang="en">
+    <a class="header__logo link" href="">
       <svg class="logo-icon" width="199" height="50">
-        <use href="./images/icelogosvgx1.svg"></use>
+        <use href="./images/icons.svg#icon-icelogosvgx1"></use>
       </svg>
     </a>
     <nav class="nav">
-      <ul class="nav_list list">
-        <li class="nav_item">
-          <a href="" class="nav_link current link">Home</a>
+      <ul class="nav__list list">
+        <li class="nav__item">
+          <a href="" class="nav__link current link">Home</a>
         </li>
-        <li class="nav_item">
-          <a href="" class="nav_link">About us</a>
+        <li class="nav__item">
+          <a href="#" class="nav__link">About us</a>
         </li>
-        <li class="nav_item">
-          <a href="" class="nav_link">How it’s made?</a>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">How it’s made?</a>
         </li>
-        <li class="nav_item">
-          <a href="" class="nav_link">Our products</a>
+        <li class="nav__item">
+          <a href="#products" class="nav__link">Our products</a>
         </li>
-        <li class="nav_item">
-          <a href="" class="nav_link">Contact</a>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Contact</a>
         </li>
       </ul>
-      <button type="button" class="nav_btn">
-        Buy now
-        <svg class="nav_icon" width="10" height="10">
-          <use href="./images/icons.svg#icon-Vector-1-2-1"></use>
-        </svg>
-      </button>
+      <div class="header__wrap">
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-burgersvg"></use>
+          </svg>
+        </button>
+        <button type="button" class="nav__btn">
+          Buy now
+          <svg class="nav__icon" width="10" height="10">
+            <use href="./images/icons.svg#icon-Vector-1-2-1"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title">ice cream made with passion</h1>
+    <button type="button" class="hero_btn--top">
+      Products
+      <a href="" class="hero__link"></a>
+    </button>
+    <button type="button" class="hero__btn--bottom">
+      How it’s made?
+      <a href="#products" class="hero__link"></a>
+    </button>
+    <p class="hero__title">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+  </div>
+</section>
