@@ -155,9 +155,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  @media screen and (min-width: 320px) {
-    flex-wrap: nowrap;
-  }
   &__location {
     width: 162px;
     height: 44px;
@@ -199,6 +196,6 @@
   }
 }
 
-// .connect-icon {
-//   margin-left: 10px;
-// }
+.connect-icon {
+  margin-left: 10px;
+}
