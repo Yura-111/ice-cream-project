@@ -1,13 +1,15 @@
-.slider-foto {
+.slider__foto {
     width: 100%;
     display: block;
     padding-top: 60px;
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
         margin-bottom: 20px;
+        padding-top: 60px;
     }
     @media screen and (min-width: 1200px) {
         margin-bottom: 16px;
+        padding-top: 120px;
     }
     & img {
         margin-right: auto;
@@ -15,22 +17,54 @@
         width: 85px;
     }
 }
-.slider-text {
+
+.slider__text {
+    position: relative;
+    width: 280px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background: rgba(0, 0, 0, 0.02);
-    padding: 30px 40px 10px;
+       
+    
+   
     margin-bottom: 16px;
     @media screen and (min-width: 768px) {
-        max-width: 628px;
+        width: 628px;
     }
     @media screen and (min-width: 1200px) {
-        max-width: 968px;
+        width: 968px;
     }
 }
-.slider-paragraph {
+.slider__line{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 350px;
+    background: repeating-linear-gradient(transparent, transparent 29px, #E1E1E1 29px, #E1E1E1 30px);
+    left: 35;
+    top: 40 ;
+@media screen and (min-width: 768px) {
+    width: 610px;
+    height: 100px;
+    background: repeating-linear-gradient(transparent, transparent 29px, #E1E1E1 29px, #E1E1E1 30px);
+    left: 8;
+    top: 40;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 860px;
+    height: 70px;
+    background: repeating-linear-gradient(transparent, transparent 29px, #E1E1E1 29px, #E1E1E1 30px);
+    left: 45;
+    top: 30;
+}
+}
+.slider__paragraph {
+    
+    padding: 40px 60px 20px 60px;
     position: relative;
+    font-family: 'DM Sans';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.86;
@@ -40,16 +74,13 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         font-size: 14px;
         line-height: 2.16;
+        padding: 40px 55px 44px 55px;
     }
-}
-.slider-pspan {
-    background-image: linear-gradient(to right, #E1E1E1 0%, #E1E1E1 100%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 1px;
-}
+    @media screen and (min-width: 1200px){
+    padding: 30px 100px;
+}}
 
-.slider-dots {
+.slider__dots {
     margin-bottom: 16px;
     text-align: center;
     & span {
@@ -66,15 +97,13 @@
     }
 }
 
-
-
-.slider-div {
+.slider__div {
     margin-bottom: 16px;
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;
     }
 }
-.slider-sity {
+.slider__sity {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
@@ -84,38 +113,26 @@
     font-size: 16px;
 }
 }
-.slider-paragraph:after {
+.slider__paragraph:after {
     content: ',,';
     font-family: "mfn-icons";
     font-size: 165px;
     letter-spacing: -0.09em;
     position: absolute;
-    left: -40px;
-    top: -210px;
+    left: 10px;
+    top: -160px;
     color: rgba(0, 0, 0, .1);
     @media screen and (min-width: 768px) {
-        top: -230px;
-        left: -65px;
+        top: -190px;
+        left: -11px;
     }
     @media screen and (min-width: 1200px) {
-        top: -205px;
-        left: -55px;
+        top: -175px;
+        left: 45px;
     }
 }
-.slider-button {
-    display: inline-block;
 
-    color: #d41442;
-    background: #d41442;
-
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    margin: 0 5px;
-    border-radius: 20px;
-}
-
-.slider-nav {
+.slider__nav {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -125,6 +142,12 @@
     list-style: none;
     justify-content: center;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 120px;
+    }
     & button {
     
         color: #D9D9D9;
@@ -138,10 +161,9 @@
         border-radius: 12px;
     }
 }
-
 .slick-active button {
     color: #d41442;
     background: #ffff;
-    background-image: url("../images/home.png");
+    background-image: url("../images/home1.svg");
     border-radius: 2px;
 }
