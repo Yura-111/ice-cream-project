@@ -27,7 +27,19 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
+    position: absolute;
+    background-image: url(../images/gallery-menu/mobile_splat3_245_1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/gallery-menu/mobile_splat3_245_2x.png);
+    background-size: bottom;
+    }
+
     @media screen and (min-width: 320px) {
         height: 85%;
         width: 90%;
@@ -39,6 +51,7 @@
         width: 528px;
         height: 581px;
     }
+    
     &-close {
         position: absolute;
         top: 8px;
@@ -72,7 +85,7 @@
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.04em;
-        color: var(--title-text-color);
+        color: var(--primary-text-color);
         @media screen and (min-width: 480px) {
             font-size: 20px;
             line-height: 1.15;
@@ -136,6 +149,77 @@
     }
     }
     
+    &__carafe {
+        position: fixed;
+        padding: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        visibility: visible;
+        overflow-y: scroll;
+        background: #FFB8CA;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 24px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: absolute;   
+        background-position: bottom;
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/carafe_1x.png);
+            background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/carafe_2x.png);
+            background-size: cover;
+        }
+        }
+
+        @media screen and (min-width: 1200px) {
+        background-image: url(../images/carafe_tablet_1x.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/carafe_tablet_2x.png);
+            background-size: cover;
+    }
+
+    }
+        
+        @media screen and (min-width: 320px) {
+            height: 85%;
+            width: 90%;
+            }
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+        }
+        &-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFB8CA;
+            fill: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 15px;
+            padding: 6px;
+            cursor: pointer;
+        
+        &:hover .close__icon-carafe,
+        &:focus .close__icon-carafe {
+            fill: var(--title-text-color);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        }
+        }
+    }
+
     &__ice-cream {
         position: fixed;
         padding: 40px;
@@ -149,6 +233,39 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 24px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: absolute;
+        background-image: url(../images/products-pic1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products-pic1-2x.png);
+        background-size: cover;
+        }
+
+        @media screen and (min-width: 768px) {
+        background-image: url(../images/products-pic1-tab-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products-pic1-tab-2x.png);
+            background-size: cover;
+        }
+        }
+
+        @media screen and (min-width: 1200px) {
+        background-image: url(../images/products-pic1-desc-1x.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products-pic1-desc-2x.png);
+            background-size: cover;
+    }
+
+    }
         
         @media screen and (min-width: 320px) {
             height: 85%;
@@ -195,6 +312,40 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 24px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: absolute;
+        background-image: url(../images/products-pic2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products-pic2-2x.png);
+        background-size: cover;
+        }
+
+        @media screen and (min-width: 768px) {
+        background-image: url(../images/products-pic2-tab-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products-pic2-tab-2x.png);
+            background-size: cover;
+        }
+        }
+
+        @media screen and (min-width: 1200px) {
+        background-image: url(../images/products-pic2-desc-1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products-pic2-desc-2x.png);
+            background-size: cover;
+        }
+
+    }
         
         @media screen and (min-width: 320px) {
             height: 85%;
@@ -241,6 +392,40 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 24px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: absolute;
+        background-image: url(../images/products-pic3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products-pic3-2x.png);
+        background-size: cover;
+        }
+    
+        @media screen and (min-width: 768px) {
+        background-image: url(../images/products-pic3-tab-1x.png);
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products-pic3-tab-2x.png);
+            background-size: cover;
+        }
+        }
+    
+        @media screen and (min-width: 1200px) {
+        background-image: url(../images/products-pic3-desc-1x.png);
+    
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/products-pic3-desc-2x.png);
+            background-size: cover;
+        }
+        }
         
         @media screen and (min-width: 320px) {
             height: 85%;
@@ -287,7 +472,7 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
+
         @media screen and (min-width: 320px) {
             height: 85%;
             width: 90%;
@@ -362,6 +547,17 @@
     color: var(--accent-color);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
+.close__icon-carafe  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFB8CA;
+    border: none;
+    width: 11px;
+    height: 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .close__icon-ice-cream  {
