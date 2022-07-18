@@ -128,6 +128,15 @@ button {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+
+  // .hero__img {
+  //   position: absolute;
+  //   width: 143px;
+  //   height: 336px;
+  //   bottom: 20%;
+  //   left: 50%;
+  //   transform: translate(-50%, 0);
+  // }
   @media screen and (min-width: 768px) {
     background-image: url(../images/Ellipse\ 3tab1x.png);
     background-repeat: no-repeat;
@@ -178,33 +187,50 @@ button {
       }
     }
     .hero__text-wrap {
-      position: absolute;
-      bottom: 10%;
-      left: 26%;
+      display: flex;
+      justify-content: baseline;
+      align-items: center;
     }
-    // .hero__text::after {
-    //   content: '';
-    //   display: block;
-    //   width: 40px;
-    //   height: 40px;
-    //   background-image: url(../images/arrow-right\ 3x1.png);
-    //   background-position: center;
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    // }
+    .hero__containers {
+      display: flex;
+      justify-content: space-between;
+    }
+    .hero_container-milk {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .hero__item {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        right: -10px;
+
+        border-radius: 50%;
+        background: var(--primary-text-color);
+      }
+    }
     .hero__stat-wrap {
-      position: absolute;
-      right: 0;
-      top: 0;
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
+
     .hero__item-count {
+      position: relative;
+      z-index: 2;
       font-family: 'Titan One';
       font-style: normal;
       font-weight: 400;
-      font-size: 46px;
+      font-size: 28px;
       line-height: 1.15;
       text-align: right;
       letter-spacing: 0.04em;
@@ -214,17 +240,15 @@ button {
     }
     .hero__item-text {
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.28;
+      font-size: 8px;
+      line-height: 1.25;
       text-align: right;
 
       color: var(--primary-text-color);
     }
     .hero__img-tasty {
       display: flex;
-      position: absolute;
-      right: 0;
-      bottom: 0;
+
       width: 190px;
       height: 150px;
       margin-left: auto;
@@ -267,12 +291,12 @@ button {
   position: relative;
   padding-top: 135px;
   margin-bottom: 20px;
-  max-width: 218px;
+  max-width: 162px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
+  font-size: 22px;
+  line-height: 1.13;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-text-color);
@@ -282,8 +306,8 @@ button {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 0.96;
+  font-size: 34px;
+  line-height: 0.91;
 
   text-transform: uppercase;
   color: #d41443;
