@@ -1,15 +1,27 @@
+.customerreviews{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+}
 .slider__foto {
     width: 100%;
     display: block;
-    padding-top: 60px;
+  
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
         margin-bottom: 20px;
-        padding-top: 60px;
+        
     }
     @media screen and (min-width: 1200px) {
         margin-bottom: 16px;
-        padding-top: 120px;
+      
     }
     & img {
         margin-right: auto;
@@ -141,13 +153,7 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-bottom: 60px;
-    @media screen and (min-width: 768px) {
-        padding-bottom: 80px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 120px;
-    }
+   
     & button {
     
         color: #D9D9D9;
