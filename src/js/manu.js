@@ -1,17 +1,17 @@
-// (() => {
-//     const refs = {
-//         openManuBtn: document.querySelector("[data-manu-carafe-open]"),
-//         closeManuBtn: document.querySelector("[data-manu-carafe-close]"),
-//         manu: document.querySelector("[data-manu-carafe]"),
-//     };
+(() => {
+    const refs = {
+        openManuBtn: document.querySelector("[data-manu-carafe-open]"),
+        closeManuBtn: document.querySelector("[data-manu-carafe-close]"),
+        manu: document.querySelector("[data-manu-carafe]"),
+    };
 
-//     refs.openManuBtn.addEventListener("click", toggleManu);
-//     refs.closeManuBtn.addEventListener("click", toggleManu);
+    refs.openManuBtn.addEventListener("click", toggleManu);
+    refs.closeManuBtn.addEventListener("click", toggleManu);
 
-//     function toggleManu() {
-//         refs.manu.classList.toggle("is-hidden");
-//     }
-//     })();
+    function toggleManu() {
+        refs.manu.classList.toggle("is-hidden");
+    }
+    })();
 
 (() => {
     const refs = {
