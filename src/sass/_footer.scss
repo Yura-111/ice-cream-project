@@ -6,6 +6,13 @@
 
 .footer-top {
   border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: unset;
+  }
 }
 .footer__top-text {
   max-width: 235px;
@@ -17,10 +24,12 @@
 
   @include tablet {
     @include font(400, 26px, 1.15, null, var(--accent-color));
+    max-width: 340px;
   }
 
   @include desktop {
     @include font(400, 30px, 1.13, 0.04em, var(--accent-color));
+    max-width: 474px;
   }
 }
 .footer__title {
@@ -29,7 +38,7 @@
   @include font(400, 34px, 1.14, 0.04em, var(--title-text-color));
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   @include tablet {
     @include font(400, 48px, 1.14, 0.04em, var(--title-text-color));
@@ -39,12 +48,12 @@
   @include desktop {
     @include font(400, 58px, 1.14, 0.06em, var(--title-text-color));
     margin-bottom: 60px;
+    max-width: 480px;
   }
 }
 .footer-soc__list {
   display: flex;
   justify-content: end;
-  margin-top: 40px;
   margin-bottom: 40px;
   list-style: none;
 }
@@ -81,13 +90,6 @@
   font-style: normal;
   text-align: right;
   margin-bottom: 40px;
-  @include tablet {
-    @include font(400, 26px, 1.15, null, var(--accent-color));
-  }
-
-  @include desktop {
-    @include font(400, 30px, 1.13, 0.04em, var(--accent-color));
-  }
 }
 
 .footer-tel {
