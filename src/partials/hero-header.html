@@ -46,6 +46,38 @@
         <h1 class="hero__title">
           ice cream made with<br /><span class="hero__title--end">passion</span>
         </h1>
+        <picture>
+          <source
+            srcset="
+              ./images/slider-pic7mobx1.png 1x,
+              ./images/slider-pic7mobx1.png 2x
+            "
+            media="(min-width:
+          1200px)"
+          />
+          <source
+            srcset="
+            ./images/slider-pic7mobx1.png 1x,
+              ./images/slider-pic7mobx1.png 2x
+            "
+            media="(min-width:
+          768px)"
+          />
+          <source
+            srcset="
+              ./images/slider-pic7mobx1.png 1x,
+              ./images/slider-pic7mobx1.png 2x
+            "
+            media="(min-width:
+          320px)"
+          />
+          <img
+            class="hero__img"
+            src="./images/slider-pic7mobx1.png"
+            alt="ice-cream"
+          />
+        </picture>
+
         <picture class="hero__img-circle">
           <source
             srcset="
@@ -87,6 +119,7 @@
           <img src="./images/Ellipse-desk-1x.png" alt="ellipse" width="335" />
         </picture> -->
         <img class="hero__img" src="./images/slider-pic7mobx1.png" />
+
         <div class="btn__wrap">
           <a href="#advantages" class="hero__link">
             <button type="button" class="hero__btn--top">Products</button></a
@@ -113,7 +146,29 @@
     </div>
     <div class="hero_container-milk">
       <div class="hero__text-wrap">
-        <img class="hero__img--bottom" src="./images/slider-pic5 tabx1.png" />
+        <picture>
+          <source
+            srcset="
+            ./images/carafe_1x.png 1x,
+            ./images/carafe_2x.png 2x
+            "
+            media="(min-width:
+          1200px)"
+          />
+          <source
+            srcset="
+            ./images/carafe_tablet_1x.png 1x,
+            ./images/carafe_tablet_2x.png 2x
+            "
+            media="(min-width:
+          768px)"
+          />
+          <img
+            class="hero__img--bottom"
+            src="./images/carafe_1x.png"
+            alt="milk in a pot"
+          />
+        </picture>
         <div class="hero_wrap-textbnt">
           <p class="hero__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -127,7 +182,30 @@
         </div>
       </div>
       <div class="hero__containers-girl">
-        <img class="hero__img-tasty" src="./images/slider-girl-tab1x.png" />
+        <picture>
+          <source
+            srcset="
+            ./images/slider-girl-desk1x.png 1x,
+            ./images/slider-girl-desk2x.png 2x
+            "
+            media="(min-width:
+          1200px)"
+          />
+          <source
+            srcset="
+            ./images/slider-girl-tab1x.png 1x,
+            ./images/slider-girl-tab2x.png 2x
+            "
+            media="(min-width:
+          768px)"
+          />
+          <img
+            class="hero__img-tasty"
+            src="./images/slider-girl-tab1x.png"
+            alt="girl with ice cream"
+          />
+        </picture>
+        
       </div>
     </div>
   </div>
