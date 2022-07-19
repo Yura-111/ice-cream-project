@@ -38,22 +38,7 @@ button {
     justify-content: space-between;
   }
 }
-// .header {
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   z-index: 10;
-//   display: flex;
-//   justify-content: baseline;
-//   align-items: center;
-//   background: transparent;
-//   padding-top: 8px;
-
-//   .container {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
+// 
 .header {
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -177,17 +162,7 @@ button {
   background-position: 100% 80%;
   background-size: 90%;
 
-  // .hero__img {
-  //   position: absolute;
-  //   width: 143px;
-  //   height: 336px;
-  //   bottom: 20%;
-  //   left: 50%;
-  //   transform: translate(-50%, 0);
-  // }
-
-  @media screen and (min-width: 768px) {
-    // background-image: url(./images/Ellipse 3tab1x.png);
+    @media screen and (min-width: 768px) {
     height: 330px;
     background-image: none;
     background-repeat: no-repeat;
@@ -254,7 +229,6 @@ button {
       &:hover,
       &:focus {
         background-color: #d41443;
-        color: #ffffff;
       }
     }
     .arrow-icon {
@@ -262,11 +236,16 @@ button {
       margin: auto;
       fill: #d41443;
     }
+    
+    .hero__button-arrow:hover .arrow-icon, 
+    .hero__button-arrow:focus .arrow-icon {
+      fill: #ffffff;
+    }
+
     .hero__text-wrap {
       display: flex;
       justify-content: baseline;
       align-items: center;
-      // padding-bottom: 16px;
     }
     .hero__containers {
       display: flex;
@@ -340,15 +319,6 @@ button {
     }
   }
 }
-// @media screen and (min-width: 768px) {
-//   .btn__wrap {
-//     position: relative;
-//     z-index: 1;
-
-//     margin-bottom: 20px;
-//   }
-
-// }
 
 .hero {
   @media screen and (min-width: 1200px) {
@@ -390,7 +360,6 @@ button {
     }
     .hero__title {
       padding-top: 60px;
-      // position: relative;
       max-width: 277px;
       margin-bottom: 20px;
       font-family: 'Titan One';
@@ -402,7 +371,6 @@ button {
       text-transform: uppercase;
 
       color: var(--primary-text-color);
-      // // z-index: 2;
     }
     .hero__title--end {
       font-family: 'Titan One';
@@ -462,7 +430,6 @@ button {
     }
     .hero__item {
       position: relative;
-      // margin-top: 68px;
       display: flex;
       flex-direction: column;
       &::after {
@@ -592,18 +559,6 @@ button {
   text-transform: uppercase;
   color: var(--primary-text-color);
   z-index: 2;
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   z-index: 1;
-  //   width: 346px;
-  //   height: 344px;
-  //   top: 13px;
-  //   left: 13px;
-  //   background-image: url(../images/Ellipse\ 3modx1.png);
-  //   border-radius: 50%;
-  //   background: #ffa5ba;
-  // }
 }
 .hero__title--end {
   font-family: 'Titan One';
