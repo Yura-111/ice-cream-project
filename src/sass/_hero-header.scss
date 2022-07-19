@@ -23,6 +23,9 @@ button {
   text-decoration: none;
 }
 .header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
   position: relative;
   display: flex;
   justify-content: baseline;
@@ -54,11 +57,13 @@ button {
 .header {
   @media screen and (min-width: 768px) {
     padding-top: 32px;
+    width: 768px;
   }
 }
 .header {
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
+    width: 1200px;
   }
 }
 .nav {
@@ -161,13 +166,16 @@ button {
   z-index: 0;
 }
 .hero {
-  height: 504px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 442px;
+  width: 320px;
   position: relative;
   background-color: #ffb8ca;
   background-image: url(../images/el-hero.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+  background-position: 100% 80%;
+  background-size: 90%;
 
   // .hero__img {
   //   position: absolute;
@@ -177,6 +185,7 @@ button {
   //   left: 50%;
   //   transform: translate(-50%, 0);
   // }
+
   @media screen and (min-width: 768px) {
     // background-image: url(./images/Ellipse 3tab1x.png);
     height: 330px;
@@ -184,6 +193,7 @@ button {
     background-repeat: no-repeat;
     background-position: 60% -50;
     background-size: contain;
+    width: 768px;
     .hero-contn {
       display: flex;
       flex-direction: column;
@@ -337,6 +347,7 @@ button {
 .hero {
   @media screen and (min-width: 1200px) {
     height: 577px;
+    width: 1200px;
     background-image: none;
     background-repeat: no-repeat;
     background-position: 60% -50;
