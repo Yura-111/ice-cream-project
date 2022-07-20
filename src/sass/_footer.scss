@@ -104,4 +104,7 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    width: 138px;
+  }
 }
