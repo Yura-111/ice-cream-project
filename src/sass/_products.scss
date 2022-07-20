@@ -42,7 +42,15 @@ button {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-bottom: 8px;
+  margin-bottom: 148px;
+
+  @include tablet {
+    margin-bottom: 160px;
+  }
+
+  @include desktop {
+    margin-bottom: 280px;
+  }
 }
 
 .products__list {
@@ -61,7 +69,12 @@ button {
   height: 490px;
   padding: 160px 40px 40px 40px;
   position: relative;
-  margin-top: 140px;
+
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
+  }
 
   &:nth-child(1) {
     background-color: #ffb8ca;
@@ -237,14 +250,12 @@ button {
     width: calc((100% - 32px) / 3);
     height: 470px;
     padding: 120px 30px 40px 30px;
-    margin-top: 140px;
   }
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 64px) / 3);
     height: 535px;
     padding: 165px 60px 60px 60px;
-    margin-top: 260px;
   }
 }
 
