@@ -1,8 +1,6 @@
 .footer {
   background-color: #fff5f6;
   padding-top: 40px;
-  padding-bottom: 40px;
-} 
 
 .footer-top {
   border-bottom: 1px solid #e1e1e1;
@@ -105,4 +103,7 @@
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    width: 138px;
+  }
 }
